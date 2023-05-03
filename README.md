@@ -19,3 +19,5 @@ _Digital Minimalism_ by Cal Newport
 _Amusing Ourselves to Death_ by Neil Postman
 
 _Technopoly: The Surrender of Culture to Technology_ by Neil Postman
+
+[_The Convivial Society_ (Substack)](https://theconvivialsociety.substack.com) by L.M. Sacasas
