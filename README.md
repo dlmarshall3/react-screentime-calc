@@ -4,4 +4,12 @@ Despite the fact the smartphone as we know it isn't even old enough to legally d
 
 While this application was a way for me to take what I've been learning about React and create something, I also wanted to highlight our new reality: the amount of time we are potentially losing each week, month, and year to these glowing boxes.
 
-Recommended resources:
+**Recommended resources:**
+
+_The Shallows_ by Nicholas Carr
+_The Glass Cage_ by Nicholas Carr
+_Irresistible_ by Adam Alter
+_Reclaiming Conversation_ by Sherry Turkle
+_Digital Minimalism_ by Cal Newport
+_Amusing Ourselves to Death_ by Neil Postman
+_Technopoly: The Surrender of Culture to Technology_ by Neil Postman
