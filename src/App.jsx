@@ -1,14 +1,17 @@
 import "./App.css";
 import Layout from "./pages/layout";
-import OptionsStorage from "./contexts/OptionsContext";
 import HoursStorage from "./contexts/HoursContext";
+import CalculateStorage from "./contexts/CalculateContext";
+import AboutStorage from "./contexts/AboutContext";
 
 function App() {
   return (
     <HoursStorage>
-      <OptionsStorage>
-        <Layout />
-      </OptionsStorage>
+      <CalculateStorage>
+        <AboutStorage>
+          <Layout />
+        </AboutStorage>
+      </CalculateStorage>
     </HoursStorage>
   );
 }

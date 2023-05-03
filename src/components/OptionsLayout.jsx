@@ -1,39 +1,56 @@
-import { useOptionsContext } from "../contexts/OptionsContext";
-import { BasicOptions } from "./BasicOptions";
-import { AdvancedOptions } from "./AdvancedOptions";
+import { IncrementButton } from "./IncrementButton";
 import { Button } from "./Button";
 import { useHoursContext } from "../contexts/HoursContext";
+import { useCalculateContext } from "../contexts/CalculateContext";
 
 export const OptionsLayout = () => {
-  const {
-    basicFlag,
-    setBasicFlag,
-    advancedFlag,
-    setAdvancedFlag,
-    optionSelected,
-    setOptionSelected,
-  } = useOptionsContext();
+  const { hours, setHours } = useHoursContext();
+  const { calculateFlag, setCalculateFlag, woahFlag, setWoahFlag } =
+    useCalculateContext();
 
-  const { _, setHoursPerDay } = useHoursContext();
-
-  function resetOptions() {
-    setBasicFlag(false);
-    setAdvancedFlag(false);
-    setOptionSelected(false);
-    setHoursPerDay(0);
+  function onHoursIncrease() {
+    if (hours === 23) {
+      setWoahFlag(!woahFlag);
+    } else {
+      setHours(hours + 1);
+    }
   }
 
-  let optionDisplay = undefined;
-  if (basicFlag && !advancedFlag) {
-    optionDisplay = <BasicOptions />;
-  } else if (!basicFlag && advancedFlag) {
-    optionDisplay = <AdvancedOptions />;
+  function onHoursDecrease() {
+    if (hours === 0) {
+      setWoahFlag(!woahFlag);
+    } else {
+      setHours(hours - 1);
+    }
+  }
+
+  function onCalculateClick() {
+    if (hours === 0) {
+      return;
+    }
+    setCalculateFlag(!calculateFlag);
   }
 
   return (
     <div>
-      <div>{optionDisplay}</div>
-      {optionSelected && <Button buttonClick={resetOptions} text="Go back"></Button>}
+      <h3 className="mt-10 text-3xl md:text-4xl">Daily average:</h3>
+      <h3 className="mt-10 text-3xl md:text-4xl">{hours}</h3>
+      <div className="flex justify-around">
+        <IncrementButton
+          text="+"
+          buttonClick={onHoursIncrease}
+        ></IncrementButton>
+        <IncrementButton
+          text="-"
+          buttonClick={onHoursDecrease}
+        ></IncrementButton>
+      </div>
+      <div>
+        <Button
+          text="Calculate"
+          buttonClick={onCalculateClick}
+        ></Button>
+      </div>
     </div>
   );
 };

@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 body {
-  background: url('/src/assets/smartphone-unsplash.jpeg');
-  background-position: bottom;
+  background: url("/src/assets/header.jpeg");
+  background-position: bottom -50px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .glass {
