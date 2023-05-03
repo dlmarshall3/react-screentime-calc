@@ -7,9 +7,15 @@ While this application was a way for me to take what I've been learning about Re
 **Recommended resources:**
 
 _The Shallows_ by Nicholas Carr
+
 _The Glass Cage_ by Nicholas Carr
+
 _Irresistible_ by Adam Alter
+
 _Reclaiming Conversation_ by Sherry Turkle
+
 _Digital Minimalism_ by Cal Newport
+
 _Amusing Ourselves to Death_ by Neil Postman
+
 _Technopoly: The Surrender of Culture to Technology_ by Neil Postman
