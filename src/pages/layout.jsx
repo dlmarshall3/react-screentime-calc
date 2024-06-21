@@ -11,7 +11,7 @@ export default function ApplicationLayout() {
     <div className="h-screen w-screen p-6 min-w-fit min-h-fit">
       <GlassPane className="flex h-full justify-center text-clip">
         <div className="p-4 text-center">
-          <h1 className="text-4xl md:text-5xl mt-10">Screentime Calculator</h1>
+          <h1 className="text-4xl md:text-5xl mt-10">Screentime Calculator :)</h1>
           {!calculateFlag && !woahFlag && (
             <div>
               <OptionsLayout />
