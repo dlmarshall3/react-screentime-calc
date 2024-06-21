@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-screentime-calc/static/css/main.56e23d34.css",
-    "main.js": "/react-screentime-calc/static/js/main.e561ae45.js",
+    "main.js": "/react-screentime-calc/static/js/main.9dca86b3.js",
     "static/media/header.jpeg": "/react-screentime-calc/static/media/header.632405959c793c2de78d.jpeg",
     "index.html": "/react-screentime-calc/index.html",
     "main.56e23d34.css.map": "/react-screentime-calc/static/css/main.56e23d34.css.map",
-    "main.e561ae45.js.map": "/react-screentime-calc/static/js/main.e561ae45.js.map"
+    "main.9dca86b3.js.map": "/react-screentime-calc/static/js/main.9dca86b3.js.map"
   },
   "entrypoints": [
     "static/css/main.56e23d34.css",
-    "static/js/main.e561ae45.js"
+    "static/js/main.9dca86b3.js"
   ]
 }
